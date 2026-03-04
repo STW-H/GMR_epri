@@ -1,0 +1,174 @@
+<mujoco model="human_skeleton">
+  <compiler angle="degree" coordinate="local"/>
+  <option gravity="0 0 -9.81"/>
+  <worldbody>
+    <body name="Hips" pos="0.000000 0.000000 0.945028">
+      <joint name="floating_base_joint" type="free" limited="false" actuatorfrclimited="false"/>
+      <geom type="sphere" size="0.0225" rgba="0.5 0.0 1.0 0.5"/>
+      <geom type="capsule" size="0.015 0.021069312546821473" pos="-0.005639 0.000000 0.050747"  quat="0.4992348808297519 0.0 -0.027650203668389516 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+      <body name="Chest" pos="-0.011277 0.000000 0.101494">
+        <joint type="ball" name="Chest_joint"/>
+        <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+        <geom type="capsule" size="0.015 0.02635263" pos="0.000000 0.000000 0.056343"  quat="0.5 0.0 0.0 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+        <body name="Chest2" pos="0.000000 0.000000 0.112685">
+          <joint type="ball" name="Chest2_joint"/>
+          <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+          <geom type="capsule" size="0.015 0.02145109028290638" pos="-0.000005 0.000000 0.051441"  quat="0.4999999993125477 0.0 -2.6219312118712732e-05 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+          <body name="Chest3" pos="-0.000011 0.000000 0.102882">
+            <joint type="ball" name="Chest3_joint"/>
+            <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+            <geom type="capsule" size="0.015 0.021393660283747794" pos="-0.000005 0.000000 0.051384"  quat="0.49999999930973243 0.0 -2.6272943468971123e-05 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+            <body name="Chest4" pos="-0.000011 0.000000 0.102767">
+              <joint type="ball" name="Chest4_joint"/>
+              <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+              <geom type="capsule" size="0.015 0.041952060000000006" pos="0.000000 0.000000 0.071942"  quat="0.5 0.0 0.0 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+              <body name="Neck" pos="0.000000 0.000000 0.143884">
+                <joint type="ball" name="Neck_joint"/>
+                <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+                <geom type="capsule" size="0.015 0.017849901407570073" pos="0.000012 0.000000 0.047840"  quat="0.499999996322186 0.0 6.064498328755814e-05 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+                <body name="Head" pos="0.000023 0.000000 0.095680">
+                  <joint type="ball" name="Head_joint"/>
+                  <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+                  <geom type="capsule" size="0.015 0.058837055013698535" pos="0.000002 0.000000 0.088827"  quat="0.49999999998072303 0.0 4.390554206203188e-06 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+                  <body name="Head_end_site" pos="0.000003 0.000000 0.177654">
+                    <joint type="ball" name="Head_end_site_joint"/>
+                    <geom type="sphere" size="0.0225" rgba="1.0 0.5 0.0 0.5"/>
+                  </body>
+                </body>
+              </body>
+              <geom type="capsule" size="0.015 0.013274958304103909" pos="0.000000 -0.015662 0.040330"  quat="0.4914484939204371 0.09207810718805039 0.0 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+              <body name="RightCollar" pos="0.000000 -0.031325 0.080661">
+                <joint type="ball" name="RightCollar_joint"/>
+                <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+                <geom type="capsule" size="0.015 0.043236635" pos="0.000000 -0.073227 0.000000"  quat="0.3535533905932738 0.35355339059327373 0.0 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+                <body name="RightShoulder" pos="0.000000 -0.146453 0.000000">
+                  <joint type="ball" name="RightShoulder_joint"/>
+                  <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+                  <geom type="capsule" size="0.015 0.12662515500000002" pos="0.000000 0.000000 -0.156615"  quat="3.061616997868383e-17 0.0 0.5 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+                  <body name="RightElbow" pos="0.000000 0.000000 -0.313230">
+                    <joint type="ball" name="RightElbow_joint"/>
+                    <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+                    <geom type="capsule" size="0.015 0.09806468" pos="0.000000 0.000000 -0.128055"  quat="3.061616997868383e-17 0.0 0.5 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+                    <body name="RightWrist" pos="0.000000 0.000000 -0.256109">
+                      <joint type="ball" name="RightWrist_joint"/>
+                      <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+                      <geom type="capsule" size="0.015 0.065701095" pos="0.000000 0.000000 -0.095691"  quat="3.061616997868383e-17 0.0 0.5 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+                      <body name="RightWrist_end_site" pos="0.000000 0.000000 -0.191382">
+                        <joint type="ball" name="RightWrist_end_site_joint"/>
+                        <geom type="sphere" size="0.0225" rgba="1.0 0.5 0.0 0.5"/>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+              <geom type="capsule" size="0.015 0.013274958304103909" pos="0.000000 0.015662 0.040330"  quat="0.4914484939204371 -0.09207810718805039 0.0 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+              <body name="LeftCollar" pos="0.000000 0.031325 0.080661">
+                <joint type="ball" name="LeftCollar_joint"/>
+                <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+                <geom type="capsule" size="0.015 0.043236635" pos="0.000000 0.073227 0.000000"  quat="0.3535533905932738 -0.35355339059327373 0.0 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+                <body name="LeftShoulder" pos="0.000000 0.146453 0.000000">
+                  <joint type="ball" name="LeftShoulder_joint"/>
+                  <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+                  <geom type="capsule" size="0.015 0.12662515500000002" pos="0.000000 0.000000 -0.156615"  quat="3.061616997868383e-17 0.0 0.5 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+                  <body name="LeftElbow" pos="0.000000 0.000000 -0.313230">
+                    <joint type="ball" name="LeftElbow_joint"/>
+                    <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+                    <geom type="capsule" size="0.015 0.09806468" pos="0.000000 0.000000 -0.128055"  quat="3.061616997868383e-17 0.0 0.5 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+                    <body name="LeftWrist" pos="0.000000 0.000000 -0.256109">
+                      <joint type="ball" name="LeftWrist_joint"/>
+                      <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+                      <geom type="capsule" size="0.015 0.065701095" pos="0.000000 0.000000 -0.095691"  quat="3.061616997868383e-17 0.0 0.5 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+                      <body name="LeftWrist_end_site" pos="0.000000 0.000000 -0.191382">
+                        <joint type="ball" name="LeftWrist_end_site_joint"/>
+                        <geom type="sphere" size="0.0225" rgba="1.0 0.5 0.0 0.5"/>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <geom type="capsule" size="0.015 0.011755369335787715" pos="-0.000002 -0.041745 0.000019"  quat="0.35363345860758433 0.3534733039948807 -1.7781469592833824e-05 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+      <body name="RightHip" pos="-0.000004 -0.083491 0.000038">
+        <joint type="ball" name="RightHip_joint"/>
+        <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+        <geom type="capsule" size="0.015 0.18626399000375862" pos="-0.000001 0.000000 -0.216254"  quat="1.4739612434548187e-06 0.0 -0.49999999999782746 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+        <body name="RightKnee" pos="-0.000003 0.000000 -0.432508">
+          <joint type="ball" name="RightKnee_joint"/>
+          <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+          <geom type="capsule" size="0.015 0.18122859001089164" pos="-0.000002 0.000000 -0.211219"  quat="2.538839029205372e-06 0.0 -0.4999999999935543 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+          <body name="RightAnkle" pos="-0.000004 0.000000 -0.422437">
+            <joint type="ball" name="RightAnkle_joint"/>
+            <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+            <geom type="capsule" size="0.015 0.06348961756579678" pos="0.085560 0.000000 -0.037656"  quat="0.27321474324144684 0.0 0.41875255709727943 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+            <body name="RightToe" pos="0.171119 0.000000 -0.075313">
+              <joint type="ball" name="RightToe_joint"/>
+              <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+              <geom type="capsule" size="0.015 0.0066469745777148585" pos="0.035708 0.000000 -0.008197"  quat="0.3115037238051117 0.0 0.3911079519206285 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+              <body name="RightToe_end_site" pos="0.071417 0.000000 -0.016393">
+                <joint type="ball" name="RightToe_end_site_joint"/>
+                <geom type="sphere" size="0.0225" rgba="1.0 0.5 0.0 0.5"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <geom type="capsule" size="0.015 0.011755365682977022" pos="-0.000001 0.041745 0.000008"  quat="0.3535851701561731 -0.35352160810285427 -7.071217194193493e-06 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+      <body name="LeftHip" pos="-0.000002 0.083491 0.000015">
+        <joint type="ball" name="LeftHip_joint"/>
+        <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+        <geom type="capsule" size="0.015 0.18626399000375862" pos="-0.000001 0.000000 -0.216254"  quat="1.4739612434548187e-06 0.0 -0.49999999999782746 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+        <body name="LeftKnee" pos="-0.000003 0.000000 -0.432508">
+          <joint type="ball" name="LeftKnee_joint"/>
+          <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+          <geom type="capsule" size="0.015 0.18122859001089164" pos="-0.000002 0.000000 -0.211219"  quat="2.538839029205372e-06 0.0 -0.4999999999935543 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+          <body name="LeftAnkle" pos="-0.000004 0.000000 -0.422437">
+            <joint type="ball" name="LeftAnkle_joint"/>
+            <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+            <geom type="capsule" size="0.015 0.06348961756579678" pos="0.085560 0.000000 -0.037656"  quat="0.27321474324144684 0.0 0.41875255709727943 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+            <body name="LeftToe" pos="0.171119 0.000000 -0.075313">
+              <joint type="ball" name="LeftToe_joint"/>
+              <geom type="sphere" size="0.0225" rgba="0.8 0.8 0.8 0.5"/>
+              <geom type="capsule" size="0.015 0.0066469745777148585" pos="0.035708 0.000000 -0.008197"  quat="0.3115037238051117 0.0 0.3911079519206285 0.0"  rgba="1.0 0.5 1.0 0.5"/>
+              <body name="LeftToe_end_site" pos="0.071417 0.000000 -0.016393">
+                <joint type="ball" name="LeftToe_end_site_joint"/>
+                <geom type="sphere" size="0.0225" rgba="1.0 0.5 0.0 0.5"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+        
+    <!-- setup scene -->
+  <statistic center="1.0 0.7 1.0" extent="0.8"/>
+    <visual>
+        <headlight diffuse="0.6 0.6 0.6" ambient="0.1 0.1 0.1" specular="0.9 0.9 0.9"/>
+        <rgba haze="0.15 0.25 0.35 1"/>
+        <global azimuth="-140" elevation="-20" offwidth="2080" offheight="1170"/>
+    </visual>
+    <asset>
+        <texture type="skybox" builtin="gradient" rgb1="1 1 1" rgb2="1 1 1" width="800" height="800"/>
+    <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="1 1 1" rgb2="1 1 1" markrgb="0 0 0"
+      width="300" height="300"/>
+    <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0"/>
+        <texture type="skybox" builtin="gradient" rgb1=".4 .5 .6" rgb2="0 0 0" width="100" height="100"/>
+        <texture builtin="flat" height="1278" mark="cross" markrgb="1 1 1" name="texgeom" random="0.01" rgb1="0.8 0.6 0.4" rgb2="0.8 0.6 0.4" type="cube" width="127"/>
+        <texture name="texplane" builtin="checker" height="512" width="512" rgb1=".2 .3 .4" rgb2=".1 .15 .2" type="2d" />
+        <material name="MatPlane" reflectance="0.5" shininess="0.01" specular="0.1" texrepeat="1 1" texture="texplane" texuniform="true" />
+        <material name="geom" texture="texgeom" texuniform="true"/>
+    </asset>
+    <worldbody>
+        <geom name="floor" size="0 0 0.01" type="plane" material="groundplane" contype="1" conaffinity="0" priority="1"
+      friction="0.6" condim="3"/>
+      <!-- <light diffuse=".5 .5 .5" pos="0 0 5" dir="0 0 -1" castshadow="true"/> -->
+
+          <light diffuse=".5 .5 .5" pos="-3 -3 5" dir="3 3 -5" castshadow="true"/>
+
+
+    </worldbody>
+
+</mujoco>
